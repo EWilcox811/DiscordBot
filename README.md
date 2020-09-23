@@ -1,3 +1,2 @@
-This is the code that I used to make my first discord bot. Learning this was essential to me making a bunch of bots
-for a friends discord DnD server that would interact with the different players and dungeon masters that are using
-his server.
+This is just a simple discord bot written in python.  This bot is a test bot to help me learn the Discord API
+so that, eventually, I can make a more robust program using the bots.
