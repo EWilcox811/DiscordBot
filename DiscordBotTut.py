@@ -3,10 +3,12 @@ import hikari
 import random
 import time
 import asyncio
-
-
+import os
+from dotenv import load_dotenv
+# used to open the file containing your discord bot token
+load_dotenv()
 bot = lightbulb.BotApp(
-    token='NzU2NjUzNjQ0MDkwNDQxNzQ5.X2U-ng.K-SuDt3PsIpJn7k7AQ70TPrvPZc',
+    token= os.getenv('DISCORD_TOKEN'),
     default_enabled_guilds=(963463443220947026))
 
 @bot.listen(hikari.GuildMessageCreateEvent)
