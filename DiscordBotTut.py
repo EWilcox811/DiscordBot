@@ -7,8 +7,7 @@ import os
 from dotenv import load_dotenv
 # used to open the file containing your discord bot token
 load_dotenv()
-bot = lightbulb.BotApp(
-    token= os.getenv('DISCORD_TOKEN'),
+bot = lightbulb.BotApp(token= os.getenv('DISCORD_TOKEN'),
     default_enabled_guilds=(963463443220947026))
 
 @bot.listen(hikari.GuildMessageCreateEvent)
